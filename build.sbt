@@ -23,3 +23,5 @@ libraryDependencies += "com.google.code.gson" % "gson" % "2.8.8"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.3.0-SNAP3" % Test
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.3.0-SNAP3" % Test
 libraryDependencies += "org.mockito" %% "mockito-scala" % "1.16.46" % Test
+libraryDependencies += "org.json" % "json" % "20210307"
+libraryDependencies += "org.apache.commons" % "commons-text" % "1.9"

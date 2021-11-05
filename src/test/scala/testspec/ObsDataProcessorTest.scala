@@ -1,13 +1,13 @@
 package testspec
 
-import caseclasses.ObsData
+import com.syngenta.flink.transformer.caseclasses.ObsData
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import com.fasterxml.jackson.module.scala.experimental.ScalaObjectMapper
 import com.typesafe.config.{Config, ConfigFactory}
-import configurations.{BaseConfiguration, KafkaConnector}
+import com.syngenta.flink.transformer.configurations.{BaseConfiguration, KafkaConnector}
 import data.TestData
-import flinkjobs.ObsDataProcessor
+import com.syngenta.flink.transformer.flinkjobs.ObsDataProcessor
 import org.apache.flink.streaming.api.functions.sink.SinkFunction
 import org.apache.flink.streaming.api.functions.source.SourceFunction
 import org.mockito.Mockito
@@ -42,6 +42,10 @@ class ObsDataProcessorTest extends AnyFlatSpec with Matchers{
 
 
 
+
+  }
+  "Obs Data Processor" should "transform obs data " in {
+    baseConfiguration.obsTransform(TestData.Data_1) should be(TestData.transformed_Data1)
   }
 
 

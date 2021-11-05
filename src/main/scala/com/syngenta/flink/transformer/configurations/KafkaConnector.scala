@@ -1,4 +1,4 @@
-package configurations
+package com.syngenta.flink.transformer.configurations
 
 import org.apache.flink.streaming.api.functions.sink.SinkFunction
 import org.apache.flink.streaming.api.functions.source.SourceFunction

@@ -1,8 +1,8 @@
-package flinkjobs
+package com.syngenta.flink.transformer.flinkjobs
 
 import com.typesafe.config.ConfigFactory
-import configurations.{BaseConfiguration, KafkaConnector}
-import functions.ObsDataProcessFunction
+import com.syngenta.flink.transformer.configurations.{BaseConfiguration, KafkaConnector}
+import com.syngenta.flink.transformer.functions.ObsDataProcessFunction
 import org.apache.flink.streaming.api.scala._
 
 class ObsDataProcessor(config: BaseConfiguration, kafkaConnector: KafkaConnector) {
