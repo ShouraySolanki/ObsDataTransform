@@ -26,16 +26,12 @@ case class  CodeComponents( componentCode: String,
                             value: Option[String] = None,
                             valueUoM: Option[String] = None
                           )
-case class  ComponentTypeOne(@JsonProperty("componentCode")componentCode: String,
+case class  ComponentType(@JsonProperty("componentCode")componentCode: String,
                              @JsonProperty("selector")selector: String,
                              @JsonProperty("value")value: Option[String] = None,
                              @JsonProperty("valueUoM")valueUoM: Option[String] = None
                             )
-case class  ComponentTypeTwo(@JsonProperty("componentCode")componentCode: String,
-                             @JsonProperty("selector")selector: String,
-                             @JsonProperty("value")value: Option[String] = None,
-                             @JsonProperty("valueUoM")valueUoM: Option[String] = None
-                            )
+
 
 
 case class SpatialExtent(
