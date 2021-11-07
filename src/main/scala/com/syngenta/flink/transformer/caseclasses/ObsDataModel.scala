@@ -34,12 +34,3 @@ case class  ComponentType(@JsonProperty("componentCode")componentCode: String,
 
 
 
-case class SpatialExtent(
-                          Type : String,
-                          latCoordinates: AnyRef,
-                          lonCoordinates:AnyRef
-                        )
-/*case class Coordinates(
-                      latCoordinates: List[ObsData],
-                      lonCoordinates: List[Double]
-                      )*/

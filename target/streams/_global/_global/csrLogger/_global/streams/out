@@ -1,9 +1,2 @@
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-text/1.9/commons-text-1.9.pom
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-parent/51/commons-parent-51.pom
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.pom
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-text/1.9/commons-text-1.9.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-text/1.9/commons-text-1.9-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-text/1.9/commons-text-1.9-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-runtime_2.11/2.0.0-M4/scalac-scoverage-runtime_2.11-2.0.0-M4.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-runtime_2.11/2.0.0-M4/scalac-scoverage-runtime_2.11-2.0.0-M4.pom.sha1

@@ -51,7 +51,7 @@ class BaseConfiguration(val config:Config) extends Serializable {
     transformed.put("yMin", obsData.yMin)
     transformed.put("yMax", obsData.yMax)
     transformed.put("phenTime", obsData.phenTime)
-    transformed.put("spatialExtent", Map("type"-> jsnobj.getString("Type"), "latCoordinates" -> jsnobj.getJSONArray("coordinates").get(0), "lonCoordinates" -> jsnobj.getJSONArray("coordinates").get(1)))//SpatialExtent(jsnobj.getString("Type"), jsnobj.getJSONArray("coordinates").get(0),jsnobj.getJSONArray("coordinates").get(1)  ))
+    transformed.put("spatialExtent", Map("type"-> jsnobj.getString("type"), "latCoordinates" -> jsnobj.getJSONArray("coordinates").get(0), "lonCoordinates" -> jsnobj.getJSONArray("coordinates").get(1)))//SpatialExtent(jsnobj.getString("Type"), jsnobj.getJSONArray("coordinates").get(0),jsnobj.getJSONArray("coordinates").get(1)  ))
 
     val obsTransformed:String= objectMapper.writeValueAsString(transformed)
 
