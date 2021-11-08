@@ -5,9 +5,10 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import com.fasterxml.jackson.module.scala.experimental.ScalaObjectMapper
 import com.typesafe.config.{Config, ConfigFactory}
-import com.syngenta.flink.transformer.configurations.{BaseConfiguration, KafkaConnector}
+import com.syngenta.flink.transformer.configurations.ObsDataTransformerConfig
 import com.syngenta.flink.data.TestData
-import com.syngenta.flink.transformer.flinkjobs.ObsDataProcessor
+import com.syngenta.flink.transformer.flinkjobs.{KafkaConnector, ObsDataProcessor}
+import com.syngenta.flink.transformer.functions.ObsDataTransformer
 import org.apache.flink.streaming.api.functions.sink.SinkFunction
 import org.apache.flink.streaming.api.functions.source.SourceFunction
 import org.mockito.Mockito
@@ -21,8 +22,8 @@ import java.util
 
 class ObsDataProcessorTest extends AnyFlatSpec with Matchers {
 
-  val config: Config = ConfigFactory.load("obsconfig.conf").getConfig("com.obs.batch")
-  val baseConfiguration = new BaseConfiguration(config)
+  val config: Config = ConfigFactory.load("obsconfig.conf")
+  val baseConfiguration = new ObsDataTransformerConfig(config)
 
   val mockKafkaConnector: KafkaConnector = mock[KafkaConnector](Mockito.withSettings().serializable())
 
@@ -40,7 +41,8 @@ class ObsDataProcessorTest extends AnyFlatSpec with Matchers {
     ObsDataSink.values.size() should be(2)
   }
   "Obs Data Processor" should "transform obs com.syngenta.flink.data " in {
-    baseConfiguration.obsTransform(TestData.Data_1) should be(TestData.transformed_Data1)
+    val obsTransformer = new ObsDataTransformer
+    obsTransformer.obsTransform(TestData.Data_1) should be(TestData.transformed_Data1)
   }
 
 

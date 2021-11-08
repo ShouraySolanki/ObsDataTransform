@@ -1,18 +1,19 @@
-package com.syngenta.flink.transformer.configurations
+package com.syngenta.flink.transformer.flinkjobs
 
+import com.syngenta.flink.transformer.configurations.ObsDataTransformerConfig
 import org.apache.flink.streaming.api.functions.sink.SinkFunction
 import org.apache.flink.streaming.api.functions.source.SourceFunction
 import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaConsumer, FlinkKafkaProducer}
 import org.apache.flink.streaming.util.serialization.SimpleStringSchema
 
-class KafkaConnector(config: BaseConfiguration) {
+class KafkaConnector(config: ObsDataTransformerConfig) {
 
   def kafkaProducer(topic: String): SinkFunction[String] = {
-    new FlinkKafkaProducer[String](topic, new SimpleStringSchema(), config.flinkKafkaProperties)
+    new FlinkKafkaProducer[String](topic, new SimpleStringSchema(), config.flinkKafkaProducerProperties)
   }
 
   def kafkaConsumer(topic: String): SourceFunction[String] = {
-    new FlinkKafkaConsumer[String](topic, new SimpleStringSchema(), config.flinkKafkaProperties)
+    new FlinkKafkaConsumer[String](topic, new SimpleStringSchema(), config.flinkKafkaConsumerProperties)
   }
 
 
