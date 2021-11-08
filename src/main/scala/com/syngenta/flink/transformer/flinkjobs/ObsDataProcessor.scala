@@ -23,7 +23,7 @@ class ObsDataProcessor(config: BaseConfiguration, kafkaConnector: KafkaConnector
   }
 }
 
-object ObsDataProcessor{
+object ObsDataProcessor {
   def main(args: Array[String]): Unit = {
     val config = ConfigFactory.load("obsconfig.conf").getConfig("com.obs.batch")
     val baseConfiguration = new BaseConfiguration(config)

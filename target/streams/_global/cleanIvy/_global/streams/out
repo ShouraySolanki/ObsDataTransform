@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mjava.lang.IllegalArgumentException: Cannot add dependency 'org.scoverage#scalac-scoverage-runtime_2.11;2.0.0-M4' to configuration '1.14.0' of module default#syngentaassignment_2.11;0.1 because this configuration doesn't exist![0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.IllegalArgumentException: Cannot add dependency 'org.scoverage#scalac-scoverage-plugin_2.11;1.4.10' to configuration '1.14.0' of module default#syngentaassignment_2.11;0.1 because this configuration doesn't exist![0m
 [0m[[0m[31merror[0m] [0m[0m	at org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor.addDependencyConfiguration(DefaultDependencyDescriptor.java:567)[0m
 [0m[[0m[31merror[0m] [0m[0m	at org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser$AbstractParser.parseDepsConfs(AbstractModuleDescriptorParser.java:157)[0m
 [0m[[0m[31merror[0m] [0m[0m	at org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser$AbstractParser.parseDepsConfs(AbstractModuleDescriptorParser.java:128)[0m
@@ -59,4 +59,4 @@
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:832)[0m
-[0m[[0m[31merror[0m] [0m[0m([31mcleanIvy[0m) java.lang.IllegalArgumentException: Cannot add dependency 'org.scoverage#scalac-scoverage-runtime_2.11;2.0.0-M4' to configuration '1.14.0' of module default#syngentaassignment_2.11;0.1 because this configuration doesn't exist![0m
+[0m[[0m[31merror[0m] [0m[0m([31mcleanIvy[0m) java.lang.IllegalArgumentException: Cannot add dependency 'org.scoverage#scalac-scoverage-plugin_2.11;1.4.10' to configuration '1.14.0' of module default#syngentaassignment_2.11;0.1 because this configuration doesn't exist![0m

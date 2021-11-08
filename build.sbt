@@ -25,4 +25,4 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.3.0-SNAP3" % Test
 libraryDependencies += "org.mockito" %% "mockito-scala" % "1.16.46" % Test
 libraryDependencies += "org.json" % "json" % "20210307"
 libraryDependencies += "org.apache.commons" % "commons-text" % "1.9"
-libraryDependencies += "org.scoverage" %% "scalac-scoverage-runtime" % "2.0.0-M4" % flinkVersion
+//libraryDependencies += "org.scoverage" %% "scalac-scoverage-plugin" % "1.4.10" % flinkVersion

@@ -1,0 +1,68 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(clean, Some(c551d512-9e07-4c80-9b67-963c2689ae17), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: clean[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.IllegalArgumentException: Cannot add dependency 'org.scoverage#scalac-scoverage-runtime_2.11;2.0.0-M4' to configuration '1.14.0' of module default#syngentaassignment_2.11;0.1 because this configuration doesn't exist![0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor.addDependencyConfiguration(DefaultDependencyDescriptor.java:567)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser$AbstractParser.parseDepsConfs(AbstractModuleDescriptorParser.java:157)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser$AbstractParser.parseDepsConfs(AbstractModuleDescriptorParser.java:128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser$AbstractParser.parseDepsConfs(AbstractModuleDescriptorParser.java:118)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser$AbstractParser.parseDepsConfs(AbstractModuleDescriptorParser.java:113)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.CustomXmlParser$CustomParser.parseDepsConfs(CustomXmlParser.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$.convertDependency(Ivy.scala:940)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$.$anonfun$addDependencies$1(Ivy.scala:877)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:286)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:108)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$.addDependencies(Ivy.scala:876)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.configureInline(Ivy.scala:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.x$7$lzycompute(Ivy.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.x$7(Ivy.scala:262)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.moduleDescriptor0$lzycompute(Ivy.scala:262)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.moduleDescriptor0(Ivy.scala:262)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:251)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:215)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:77)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$1.call(Ivy.scala:87)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:87)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:209)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:206)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:250)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.cleanCachedResolutionCache(IvyActions.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$compileBase$7(Defaults.scala:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$compileBase$7$adapted(Defaults.scala:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:832)[0m
+[0m[[0m[31merror[0m] [0m[0m([31mcleanIvy[0m) java.lang.IllegalArgumentException: Cannot add dependency 'org.scoverage#scalac-scoverage-runtime_2.11;2.0.0-M4' to configuration '1.14.0' of module default#syngentaassignment_2.11;0.1 because this configuration doesn't exist![0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 07-Nov-2021, 7:35:52 pm[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

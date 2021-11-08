@@ -1,2 +1,6 @@
-[debug] downloaded https://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-runtime_2.12/2.0.0-M4/scalac-scoverage-runtime_2.12-2.0.0-M4.pom
-[debug] downloaded https://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-runtime_2.12/2.0.0-M4/scalac-scoverage-runtime_2.12-2.0.0-M4.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.4.7/sbt-scoverage-1.4.7.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.4.7/sbt-scoverage-1.4.7.pom.sha1
+[debug] downloaded https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.4.7/ivys/ivy.xml
+[debug] downloaded https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.4.7/ivys/ivy.xml.sha1
+[debug] downloaded https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.4.7/ivys/ivy.xml
+[debug] downloaded https://repo.typesafe.com/typesafe/ivy-releases/org.scoverage/sbt-scoverage/scala_2.12/sbt_1.0/1.4.7/ivys/ivy.xml.sha1

@@ -18,3 +18,51 @@
 1636273828739:clean
 1636273840500:test
 1636273854618:coverage
+1636293106711:test
+1636293169855:compile
+1636293173033:test
+1636293186385:coverage
+1636293222734:coverage test
+1636293239641:clean
+1636293264160:last cleanIvy
+1636293270595:clean
+1636293297937:reload
+1636293300430:clean
+1636293313365:last cleanIvy
+1636293320248:coverage test
+1636293614613:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/b_/hs5jfk5x10scmcldb8d6szj80000gp/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/shouryasolanki/Library/Application Support/JetBrains/IdeaIC2021.2/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2021.1.1/sbt-structure-extractor-2021.1.1.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+1636293668135:test
+1636293684701:coverage
+1636293689103:Coverage
+1636293749893::coverage
+1636293756873:coverage:
+1636293759632:coverage :
+1636293761677::
+1636293766913:coverage
+1636293775767:package
+1636293785826:test coverage
+1636293882951:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/b_/hs5jfk5x10scmcldb8d6szj80000gp/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/shouryasolanki/Library/Application Support/JetBrains/IdeaIC2021.2/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2021.1.1/sbt-structure-extractor-2021.1.1.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+1636293952125:clean
+1636293963732:last cleanIvy
+1636293969025:reload
+1636294467659:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/b_/hs5jfk5x10scmcldb8d6szj80000gp/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/shouryasolanki/Library/Application Support/JetBrains/IdeaIC2021.2/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2021.1.1/sbt-structure-extractor-2021.1.1.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+1636294622048:reload
+1636294629818:test
+1636294645613:compile
+1636294699583:update
+1636294733925:clean
+1636294752328:reload
+1636294755383:compile
+1636294784281:clean
+1636294789165:reload
+1636294793322:compile
+1636294854599:clean
+1636294857403:reload
+1636294862098:compile
+1636294888809:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/b_/hs5jfk5x10scmcldb8d6szj80000gp/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/shouryasolanki/Library/Application Support/JetBrains/IdeaIC2021.2/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2021.1.1/sbt-structure-extractor-2021.1.1.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+1636294922071:clean
+1636294931858:reload
+1636294944635:compile
+1636294959014:test
+1636295017656:clean
+1636295032234:last cleanIvy

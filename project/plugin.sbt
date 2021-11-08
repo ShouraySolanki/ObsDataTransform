@@ -1,1 +1,1 @@
-libraryDependencies += "org.scoverage" %% "scalac-scoverage-runtime" % "2.0.0-M4"
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.4.7")
