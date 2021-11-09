@@ -1,4 +1,4 @@
-package com.syngenta.flink.transformer.flinkjobs
+package com.syngenta.flink.transformer.job
 
 import com.syngenta.flink.transformer.configurations.ObsDataTransformerConfig
 import org.apache.flink.streaming.api.functions.sink.SinkFunction

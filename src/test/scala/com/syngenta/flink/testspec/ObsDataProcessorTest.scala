@@ -1,13 +1,13 @@
 package com.syngenta.flink.testspec
 
-import com.syngenta.flink.transformer.caseclasses.ObsData
+import com.syngenta.flink.transformer.domain.ObsData
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import com.fasterxml.jackson.module.scala.experimental.ScalaObjectMapper
 import com.typesafe.config.{Config, ConfigFactory}
 import com.syngenta.flink.transformer.configurations.ObsDataTransformerConfig
 import com.syngenta.flink.data.TestData
-import com.syngenta.flink.transformer.flinkjobs.{KafkaConnector, ObsDataProcessor}
+import com.syngenta.flink.transformer.job.{KafkaConnector, ObsDataProcessor}
 import com.syngenta.flink.transformer.functions.ObsDataTransformer
 import org.apache.flink.streaming.api.functions.sink.SinkFunction
 import org.apache.flink.streaming.api.functions.source.SourceFunction

@@ -1,4 +1,4 @@
-package com.syngenta.flink.transformer.caseclasses
+package com.syngenta.flink.transformer.domain
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.google.gson.annotations.SerializedName

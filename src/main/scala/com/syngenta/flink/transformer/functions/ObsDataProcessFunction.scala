@@ -1,6 +1,6 @@
 package com.syngenta.flink.transformer.functions
 
-import com.syngenta.flink.transformer.caseclasses.ObsData
+import com.syngenta.flink.transformer.domain.ObsData
 import com.syngenta.flink.transformer.configurations.ObsDataTransformerConfig
 import org.apache.flink.api.common.state.{ValueState, ValueStateDescriptor}
 import org.apache.flink.streaming.api.functions.ProcessFunction

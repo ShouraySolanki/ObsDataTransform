@@ -1,4 +1,4 @@
-package com.syngenta.flink.transformer.flinkjobs
+package com.syngenta.flink.transformer.job
 
 import com.typesafe.config.ConfigFactory
 import com.syngenta.flink.transformer.configurations.ObsDataTransformerConfig

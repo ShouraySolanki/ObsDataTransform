@@ -2,7 +2,7 @@ package com.syngenta.flink.transformer.functions
 
 import com.fasterxml.jackson.databind.{DeserializationFeature, ObjectMapper}
 import com.fasterxml.jackson.module.scala.{DefaultScalaModule, ScalaObjectMapper}
-import com.syngenta.flink.transformer.caseclasses.{ComponentType, ObsData}
+import com.syngenta.flink.transformer.domain.{ComponentType, ObsData}
 import org.apache.commons.text.CaseUtils
 import org.json.JSONObject
 
