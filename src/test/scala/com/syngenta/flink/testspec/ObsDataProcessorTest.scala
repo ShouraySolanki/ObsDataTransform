@@ -7,8 +7,9 @@ import com.fasterxml.jackson.module.scala.experimental.ScalaObjectMapper
 import com.typesafe.config.{Config, ConfigFactory}
 import com.syngenta.flink.transformer.configurations.ObsDataTransformerConfig
 import com.syngenta.flink.data.TestData
-import com.syngenta.flink.transformer.job.{KafkaConnector, ObsDataProcessor}
+import com.syngenta.flink.transformer.job.ObsDataProcessor
 import com.syngenta.flink.transformer.functions.ObsDataTransformer
+import com.syngenta.flink.transformer.util.KafkaConnector
 import org.apache.flink.streaming.api.functions.sink.SinkFunction
 import org.apache.flink.streaming.api.functions.source.SourceFunction
 import org.mockito.Mockito
@@ -28,9 +29,9 @@ class ObsDataProcessorTest extends AnyFlatSpec with Matchers {
   val mockKafkaConnector: KafkaConnector = mock[KafkaConnector](Mockito.withSettings().serializable())
 
 
-  when(mockKafkaConnector.kafkaConsumer(baseConfiguration.obsdatatopic)) thenReturn (new FlinkEventSource)
+  when(mockKafkaConnector.kafkaConsumer(baseConfiguration.kafkaInputTopic)) thenReturn (new FlinkEventSource)
 
-  when(mockKafkaConnector.kafkaProducer(baseConfiguration.obsdatatopic1)) thenReturn (new ObsDataSink)
+  when(mockKafkaConnector.kafkaProducer(baseConfiguration.kafkaOutputTopic)) thenReturn (new ObsDataSink)
 
 
   " Obs Data Processor " should "process the com.syngenta.flink.data" in {

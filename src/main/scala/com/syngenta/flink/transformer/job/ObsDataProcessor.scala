@@ -2,21 +2,22 @@ package com.syngenta.flink.transformer.job
 
 import com.typesafe.config.ConfigFactory
 import com.syngenta.flink.transformer.configurations.ObsDataTransformerConfig
-import com.syngenta.flink.transformer.functions.ObsDataProcessFunction
+import com.syngenta.flink.transformer.functions.ObsTransformerFunction
+import com.syngenta.flink.transformer.util.KafkaConnector
 import org.apache.flink.streaming.api.scala._
 
 class ObsDataProcessor(config: ObsDataTransformerConfig, kafkaConnector: KafkaConnector) {
   def process(): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
-    val obsDataProcessFunction = new ObsDataProcessFunction(config)
+    val obsTransformerFunction = new ObsTransformerFunction(config)
 
 
-    val stream = env.addSource(kafkaConnector.kafkaConsumer(config.obsdatatopic))
+    val stream = env.addSource(kafkaConnector.kafkaConsumer(config.kafkaInputTopic))
 
-      .process(obsDataProcessFunction)
+      .process(obsTransformerFunction)
 
 
-    stream.getSideOutput(config.transformedOutputTag).addSink(kafkaConnector.kafkaProducer(config.obsdatatopic1))
+    stream.getSideOutput(config.transformedOutputTag).addSink(kafkaConnector.kafkaProducer(config.kafkaOutputTopic))
 
     env.execute()
 

@@ -14,7 +14,7 @@ class ObsDataTransformer {
     objectMapper.registerModule(DefaultScalaModule)
     objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
     val obsData: ObsData = objectMapper.readValue[ObsData](value)
-    val jsnobj: JSONObject = new JSONObject(obsData.spatialExtent)
+    val spatialExtentJsnObj: JSONObject = new JSONObject(obsData.spatialExtent)
 
     val transformed: util.HashMap[String, Any] = new util.HashMap[String, Any]()
     transformed.put("obsCode", obsData.obsCode)
@@ -31,7 +31,7 @@ class ObsDataTransformer {
     transformed.put("yMin", obsData.yMin)
     transformed.put("yMax", obsData.yMax)
     transformed.put("phenTime", obsData.phenTime)
-    transformed.put("spatialExtent", Map("type" -> jsnobj.getString("type"), "latCoordinates" -> jsnobj.getJSONArray("coordinates").get(0), "lonCoordinates" -> jsnobj.getJSONArray("coordinates").get(1))) //SpatialExtent(jsnobj.getString("Type"), jsnobj.getJSONArray("coordinates").get(0),jsnobj.getJSONArray("coordinates").get(1)  ))
+    transformed.put("spatialExtent", Map("type" -> spatialExtentJsnObj.getString("type"), "latCoordinates" -> spatialExtentJsnObj.getJSONArray("coordinates").get(0), "lonCoordinates" -> spatialExtentJsnObj.getJSONArray("coordinates").get(1))) 
 
     val obsTransformed: String = objectMapper.writeValueAsString(transformed)
 

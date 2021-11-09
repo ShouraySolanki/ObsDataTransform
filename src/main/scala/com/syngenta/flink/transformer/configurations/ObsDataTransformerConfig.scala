@@ -8,8 +8,8 @@ import java.util.Properties
 
 class ObsDataTransformerConfig(val config: Config) extends Serializable {
 
-  val obsdatatopic: String = config.getString("obsdata.topic")
-  val obsdatatopic1: String = config.getString("obsdata.topic1")
+  val kafkaInputTopic: String = config.getString("kafka.inputtopic")
+  val kafkaOutputTopic: String = config.getString("kafka.outputtopic")
   val transformedOutputTag = OutputTag[String]("transformed-output")
   val kafkaProducerBrokerServers: String = config.getString("kafka.producer.broker-servers")
   val kafkaConsumerBrokerServers: String = config.getString("kafka.consumer.broker-servers")

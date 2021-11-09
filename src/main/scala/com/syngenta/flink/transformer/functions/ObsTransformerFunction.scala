@@ -6,7 +6,7 @@ import org.apache.flink.api.common.state.{ValueState, ValueStateDescriptor}
 import org.apache.flink.streaming.api.functions.ProcessFunction
 import org.apache.flink.util.Collector
 
-class ObsDataProcessFunction(config: ObsDataTransformerConfig) extends ProcessFunction[String, String] {
+class ObsTransformerFunction(config: ObsDataTransformerConfig) extends ProcessFunction[String, String] {
 
   lazy val state: ValueState[ObsData] = getRuntimeContext.getState(new ValueStateDescriptor[ObsData]("myState", classOf[ObsData]))
 
@@ -16,10 +16,10 @@ class ObsDataProcessFunction(config: ObsDataTransformerConfig) extends ProcessFu
                               out: Collector[String]): Unit = {
 
 
-    val obsDataTransformed = new ObsDataTransformer
+    val obsDataTransformer = new ObsDataTransformer
 
-    out.collect(obsDataTransformed.obsTransform(value))
-    ctx.output(config.transformedOutputTag, String.valueOf(obsDataTransformed.obsTransform(value)))
+    out.collect(obsDataTransformer.obsTransform(value))
+    ctx.output(config.transformedOutputTag, String.valueOf(obsDataTransformer.obsTransform(value)))
 
 
   }
